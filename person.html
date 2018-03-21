@@ -58,7 +58,7 @@
 			var indro = sessionStorage.getItem('indro');
 			console.log(img_path,name,indro);
 			var path = img_path.match(/http.*[jpg|png]/);
-			if (path.length) {
+			if (path && path.length) {
 				$('.head-portrait img').attr('src',path[0]);
 			}
 			$('.name').html(name);
